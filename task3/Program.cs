@@ -21,7 +21,7 @@ void FillArray (int[,] matr)
     }
 }
 
-void MultiplyMatrix(int[,] matrix, int[,] matrix2, int[,] resultMatrix)
+void ResultMatrix(int[,] matrix, int[,] matrix2, int[,] resultMatrix)
 {
   for (int i = 0; i < resultMatrix.GetLength(0); i++)
   {
@@ -52,6 +52,6 @@ PrintArray(matrix2);
 
 int[,] resultMatrix = new int[m,m];
 
-MultiplyMatrix(matrix, matrix2, resultMatrix);
+ResultMatrix(matrix, matrix2, resultMatrix);
 Console.WriteLine($"\nПроизведение первой и второй матриц:");
 PrintArray(resultMatrix);
